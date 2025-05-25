@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarvestHub AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              light: '#6EE7B7', // emerald-300
+              DEFAULT: '#10B981', // emerald-500
+              dark: '#047857', // emerald-700
+            },
+            secondary: {
+              light: '#FDE68A', // amber-200
+              DEFAULT: '#F59E0B', // amber-500
+              dark: '#B45309', // amber-700
+            },
+            accent: {
+              light: '#FBBF24', // amber-400
+              DEFAULT: '#D97706', // amber-600
+              dark: '#92400E', // amber-800
+            },
+            joyful: '#F59E0B', // amber-500
+            success: '#10B981', // emerald-500
+            danger: '#EF4444', // red-500
+            info: '#3B82F6', // blue-500
+            lightgray: '#f7fafc', // very light gray for backgrounds
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+  }
+}
+</script>
+</head>
+<body class="bg-lightgray font-sans">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+    <link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
